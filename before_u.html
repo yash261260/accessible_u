@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Before - Accessible University Demo Site - Inaccessible Version</title>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#" aria-label="Home">Home</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#"
@@ -88,6 +88,7 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
+            <label for=“search-input”>Search:</label>
             <input id="search-input" class="form-control mr-sm-2" type="search" placeholder="Search">
             <button class="btn btn-success my-2 my-sm-0" type="submit">Go</button>
           </form>
@@ -144,7 +145,7 @@
               </p>
 
               <div class="heading">Can you spot the barriers?</div>
-              <p><img style="float:left;max-width:200px;margin-right:10px" src="images/8675309-block.jpg"/> There are at least 18 accessibility issues on this page.
+              <p><img style="float:left;max-width:200px;margin-right:10px" src="images/8675309-block.jpg" alt=“Sign says, road closed, a barrier using the road”/> There are at least 18 accessibility issues on this page.
                 To see a list of all known issues, <a href="issues.html">click here</a>.
                 To see a more accessible version of this same page, <a href="after_u.html">click here</a>.
                 To view a popup list of accessibility issues:</p>
@@ -226,7 +227,7 @@
               <div class="events box">
                 <div class="heading">Events</div>
 
-                <h6>December 1</h6>
+                <time datetime="2021-12-01">December 1</time>
                 <h5><a href="#">A great holiday event</a></h4>
 
                 <p>Don't miss this event.</p>
